@@ -1,16 +1,14 @@
 {
-    "name": "beastbytes/iban",
+    "name": "beastbytes/iban-formats",
     "type": "library",
-    "description": "International Bank Account Number helper methods and validator",
+    "description": "International Bank Account Number (IBAN) format data indexed by ISO 3166 country alpha-2 codes",
     "keywords": [
-        "helper",
-        "validator",
         "International Bank Account Number",
         "IBAN"
     ],
     "support": {
-        "issues": "https://github.com/beastbytes/phone-number-validator/issues",
-        "source": "https://github.com/beastbytes/phone-number-validator"
+        "issues": "https://github.com/beastbytes/iban-formats/issues",
+        "source": "https://github.com/beastbytes/iban-formats"
     },
     "license": "BSD-3-Clause",
     "authors": [{
@@ -20,8 +18,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.0",
-        "yiisoft/validator": "3.0.x-dev"
+        "php": "^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
@@ -30,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BeastBytes\\Iban\\": "src"
+            "BeastBytes\\Iban\\Formats\\": "src"
         }
     },
     "autoload-dev": {

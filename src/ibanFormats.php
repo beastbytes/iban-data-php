@@ -9,7 +9,7 @@ declare(strict_types=1);
 /**
  * IBAN definitions indexed by ISO-3166 alpha-2 codes
  *
- * Each IBAN definition the regex pattern for the IBAN and IBAN field names for the country
+ * Each IBAN definition is the regex pattern for the IBAN and IBAN field names for the country
  */
 return [
     'AD' => [ // Andorra
