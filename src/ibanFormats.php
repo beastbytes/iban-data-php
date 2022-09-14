@@ -13,7 +13,7 @@ declare(strict_types=1);
  */
 return [
     'AD' => [ // Andorra
-        'pattern' => 'AD(\d{2})(\d{4})(\d{4})([A-Z0-9]{12})',
+        'pattern' => '/AD(\d{2})(\d{4})(\d{4})([A-Z0-9]{12})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -22,7 +22,7 @@ return [
         ]
     ],
     'AE' => [ // United Arab Emirates
-        'pattern' => 'AE(\d{2})(\d{3})(\d{16})',
+        'pattern' => '/AE(\d{2})(\d{3})(\d{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -30,7 +30,7 @@ return [
         ]
     ],
     'AL' => [ // Albania
-        'pattern' => 'AL(\d{2})(\d{3})(\d{4})(\d)([A-Z0-9]{16})',
+        'pattern' => '/AL(\d{2})(\d{3})(\d{4})(\d)([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -40,7 +40,7 @@ return [
         ]
     ],
     'AT' => [ // Austria
-        'pattern' => 'AT(\d{2})(\d{5})(\d{11})',
+        'pattern' => '/AT(\d{2})(\d{5})(\d{11})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -48,7 +48,7 @@ return [
         ]
     ],
     'AZ' => [ // Azerbaijan
-        'pattern' => 'AZ(\d{2})([A-Z0-9]{4})(\d{20})',
+        'pattern' => '/AZ(\d{2})([A-Z0-9]{4})(\d{20})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -56,7 +56,7 @@ return [
         ]
     ],
     'BA' => [ // Bosnia and Herzegovina
-        'pattern' => 'BA(\d{2})(\d{3})(\d{3})(\d{8})(\d{2})',
+        'pattern' => '/BA(\d{2})(\d{3})(\d{3})(\d{8})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -66,7 +66,7 @@ return [
         ]
     ],
     'BE' => [ // Belgium
-        'pattern' => 'BE(\d{2})(\d{3})(\d{7})(\d{2})',
+        'pattern' => '/BE(\d{2})(\d{3})(\d{7})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -75,7 +75,7 @@ return [
         ]
     ],
     'BG' => [ // Bulgaria
-        'pattern' => 'BG(\d{2})([A-Z]{4})(\d{4})(\d{2})([A-Z0-9]{8})',
+        'pattern' => '/BG(\d{2})([A-Z]{4})(\d{4})(\d{2})([A-Z0-9]{8})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -85,7 +85,7 @@ return [
         ]
     ],
     'BH' => [ // Bahrain
-        'pattern' => 'BH(\d{2})([A-Z]{4})(\d{14})',
+        'pattern' => '/BH(\d{2})([A-Z]{4})(\d{14})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -93,7 +93,7 @@ return [
         ]
     ],
     'BR' => [ // Brazil
-        'pattern' => 'BR(\d{2})(\d{8})(\d{5})(\d{10})([A-Z]{1})([A-Z0-9]{1})',
+        'pattern' => '/BR(\d{2})(\d{8})(\d{5})(\d{10})([A-Z]{1})([A-Z0-9]{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -104,7 +104,7 @@ return [
         ]
     ],
     'BY' => [ // Belarus
-        'pattern' => 'BY(\d{2})([A-Z0-9]{4})(\d{4})([A-Z0-9]{16})',
+        'pattern' => '/BY(\d{2})([A-Z0-9]{4})(\d{4})([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'National bank or branch code',
@@ -113,7 +113,7 @@ return [
         ]
     ],
     'CH' => [ // Switzerland
-        'pattern' => 'CH(\d{2})(\d{5})([A-Z0-9]{12})',
+        'pattern' => '/CH(\d{2})(\d{5})([A-Z0-9]{12})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -121,7 +121,7 @@ return [
         ]
     ],
     'CR' => [ // Costa Rica
-        'pattern' => 'CR(\d{2})(\d{4})(\d{14})',
+        'pattern' => '/CR(\d{2})(\d{4})(\d{14})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -129,7 +129,7 @@ return [
         ]
     ],
     'CY' => [ // Cyprus
-        'pattern' => 'CY(\d{2})(\d{3})(\d{5})([A-Z0-9]{16})',
+        'pattern' => '/CY(\d{2})(\d{3})(\d{5})([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -138,7 +138,7 @@ return [
         ]
     ],
     'CZ' => [ // Czech Republic
-        'pattern' => 'CZ(\d{2})(\d{4})(\d{6})(\d{10})',
+        'pattern' => '/CZ(\d{2})(\d{4})(\d{6})(\d{10})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -147,7 +147,7 @@ return [
         ]
     ],
     'DE' => [ // Germany
-        'pattern' => 'DE(\d{2})(\d{8})(\d{10})',
+        'pattern' => '/DE(\d{2})(\d{8})(\d{10})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -155,7 +155,7 @@ return [
         ]
     ],
     'DK' => [ // Denmark
-        'pattern' => 'DK(\d{2})(\d{4})(\d{9})(\d{1})',
+        'pattern' => '/DK(\d{2})(\d{4})(\d{9})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -164,7 +164,7 @@ return [
         ]
     ],
     'DO' => [ // Dominican Republic
-        'pattern' => 'DO(\d{2})([A-Z]{4})(\d{20})',
+        'pattern' => '/DO(\d{2})([A-Z]{4})(\d{20})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -172,7 +172,7 @@ return [
         ]
     ],
     'EE' => [ // Estonia
-        'pattern' => 'EE(\d{2})(\d{2})(\d{2})(\d{11})(\d{1})',
+        'pattern' => '/EE(\d{2})(\d{2})(\d{2})(\d{11})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -182,7 +182,7 @@ return [
         ]
     ],
     'EG' => [ // Egypt
-        'pattern' => 'EG(\d{2})(\d{4})(\d{4})(\d{17})',
+        'pattern' => '/EG(\d{2})(\d{4})(\d{4})(\d{17})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -192,7 +192,7 @@ return [
         ]
     ],
     'ES' => [ // Spain
-        'pattern' => 'ES(\d{2})(\d{4})(\d{4})(\d{2})(\d{10})',
+        'pattern' => '/ES(\d{2})(\d{4})(\d{4})(\d{2})(\d{10})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -202,7 +202,7 @@ return [
         ]
     ],
     'FI' => [ // Finland
-        'pattern' => 'FI(\d{2})(\d{6})(\d{7})(\d{1})',
+        'pattern' => '/FI(\d{2})(\d{6})(\d{7})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank and branch code',
@@ -211,7 +211,7 @@ return [
         ]
     ],
     'FO' => [ // Faroe Islands
-        'pattern' => 'FO(\d{2})(\d{4})(\d{9})(\d{1})',
+        'pattern' => '/FO(\d{2})(\d{4})(\d{9})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -220,7 +220,7 @@ return [
         ]
     ],
     'FR' => [ // France
-        'pattern' => 'FR(\d{2})(\d{5})(\d{5})([A-Z0-9]{11})(\d{2})',
+        'pattern' => '/FR(\d{2})(\d{5})(\d{5})([A-Z0-9]{11})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -230,7 +230,7 @@ return [
         ]
     ],
     'GB' => [ // United Kingdom
-        'pattern' => 'GB(\d{2})([A-Z]{4})(\d{6})(\d{8})',
+        'pattern' => '/GB(\d{2})([A-Z]{4})(\d{6})(\d{8})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -239,7 +239,7 @@ return [
         ]
     ],
     'GE' => [ // Georgia
-        'pattern' => 'GE(\d{2})([A-Z0-9]{2})(\d{16})',
+        'pattern' => '/GE(\d{2})([A-Z0-9]{2})(\d{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -247,7 +247,7 @@ return [
         ]
     ],
     'GI' => [ // Gibraltar
-        'pattern' => 'GI(\d{2})([A-Z]{4})(\d{15})',
+        'pattern' => '/GI(\d{2})([A-Z]{4})(\d{15})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -255,7 +255,7 @@ return [
         ]
     ],
     'GL' => [ // Greenland
-        'pattern' => 'GL(\d{2})(\d{4})(\d{9})(\d{1})',
+        'pattern' => '/GL(\d{2})(\d{4})(\d{9})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -264,7 +264,7 @@ return [
         ]
     ],
     'GR' => [ // Greece
-        'pattern' => 'GR(\d{2})(\d{3})(\d{4})([A-Z0-9]{16})',
+        'pattern' => '/GR(\d{2})(\d{3})(\d{4})([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -273,7 +273,7 @@ return [
         ]
     ],
     'GT' => [ // Guatemala
-        'pattern' => 'GT(\d{2})([A-Z0-9]{4})([A-Z0-9]{2})([A-Z0-9]{2})([A-Z0-9]{16})',
+        'pattern' => '/GT(\d{2})([A-Z0-9]{4})([A-Z0-9]{2})([A-Z0-9]{2})([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -283,7 +283,7 @@ return [
         ]
     ],
     'HR' => [ // Croatia
-        'pattern' => 'HR(\d{2})(\d{7})(\d{10})',
+        'pattern' => '/HR(\d{2})(\d{7})(\d{10})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -291,7 +291,7 @@ return [
         ]
     ],
     'HU' => [ // Hungary
-        'pattern' => 'HU(\d{2})(\d{3})(\d{4})(\d{1})(\d{15})(\d{1})',
+        'pattern' => '/HU(\d{2})(\d{3})(\d{4})(\d{1})(\d{15})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -302,7 +302,7 @@ return [
         ]
     ],
     'IE' => [ // Ireland
-        'pattern' => 'IE(\d{2})([A-Z0-9]{4})(\d{6})(\d{8})',
+        'pattern' => '/IE(\d{2})([A-Z0-9]{4})(\d{6})(\d{8})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -311,7 +311,7 @@ return [
         ]
     ],
     'IL' => [ // Israel
-        'pattern' => 'IL(\d{2})(\d{3})(\d{3})(\d{13})',
+        'pattern' => '/IL(\d{2})(\d{3})(\d{3})(\d{13})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -320,7 +320,7 @@ return [
         ]
     ],
     'IQ' => [ // Iraq
-        'pattern' => 'IQ(\d{2})([A-Z]{4})(\d{3})(\d{12})',
+        'pattern' => '/IQ(\d{2})([A-Z]{4})(\d{3})(\d{12})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -329,7 +329,7 @@ return [
         ]
     ],
     'IS' => [ // Iceland
-        'pattern' => 'IS(\d{2})(\d{2})(\d{2})(\d{2})(\d{6})(\d{10})',
+        'pattern' => '/IS(\d{2})(\d{2})(\d{2})(\d{2})(\d{6})(\d{10})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -340,7 +340,7 @@ return [
         ]
     ],
     'IT' => [ // Italy
-        'pattern' => 'IT(\d{2})([A-Z]{1})(\d{5})(\d{5})([A-Z0-9]{12})',
+        'pattern' => '/IT(\d{2})([A-Z]{1})(\d{5})(\d{5})([A-Z0-9]{12})/',
         'fields' => [
             'IBAN check digits',
             'Check character',
@@ -350,7 +350,7 @@ return [
         ]
     ],
     'JO' => [ // Jordan
-        'pattern' => 'JO(\d{2})([A-Z]{4})(\d{4})(\d{18})',
+        'pattern' => '/JO(\d{2})([A-Z]{4})(\d{4})(\d{18})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -359,7 +359,7 @@ return [
         ]
     ],
     'KW' => [ // Kuwait
-        'pattern' => 'KW(\d{2})([A-Z]{4})([A-Z0-9]{22})',
+        'pattern' => '/KW(\d{2})([A-Z]{4})([A-Z0-9]{22})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -367,7 +367,7 @@ return [
         ]
     ],
     'KZ' => [ // Kazakhstan
-        'pattern' => 'KZ(\d{2})(\d{3})([A-Z0-9]{13})',
+        'pattern' => '/KZ(\d{2})(\d{3})([A-Z0-9]{13})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -375,7 +375,7 @@ return [
         ]
     ],
     'LB' => [ // Lebanon
-        'pattern' => 'LB(\d{2})(\d{4})([A-Z0-9]{20})',
+        'pattern' => '/LB(\d{2})(\d{4})([A-Z0-9]{20})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -383,7 +383,7 @@ return [
         ]
     ],
     'LC' => [ // Saint Lucia
-        'pattern' => 'LC(\d{2})([A-Z]{4})([A-Z0-9]{24})',
+        'pattern' => '/LC(\d{2})([A-Z]{4})([A-Z0-9]{24})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -391,7 +391,7 @@ return [
         ]
     ],
     'LI' => [ // Liechtenstein
-        'pattern' => 'LI(\d{2})(\d{5})([A-Z0-9]{12})',
+        'pattern' => '/LI(\d{2})(\d{5})([A-Z0-9]{12})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -399,7 +399,7 @@ return [
         ]
     ],
     'LT' => [ // Lithuania
-        'pattern' => 'LT(\d{2})(\d{5})(\d{11})',
+        'pattern' => '/LT(\d{2})(\d{5})(\d{11})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -407,7 +407,7 @@ return [
         ]
     ],
     'LU' => [ // Luxembourg
-        'pattern' => 'LU(\d{2})(\d{3})([A-Z0-9]{13})',
+        'pattern' => '/LU(\d{2})(\d{3})([A-Z0-9]{13})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -415,7 +415,7 @@ return [
         ]
     ],
     'LV' => [ // Latvia
-        'pattern' => 'LV(\d{2})([A-Z]{4})(\d{13})',
+        'pattern' => '/LV(\d{2})([A-Z]{4})(\d{13})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -423,7 +423,7 @@ return [
         ]
     ],
     'LY' => [ // Libya
-        'pattern' => 'LY(\d{2})(\d{3})(\d{3})(\d{15})',
+        'pattern' => '/LY(\d{2})(\d{3})(\d{3})(\d{15})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -432,7 +432,7 @@ return [
         ]
     ],
     'MC' => [ // Monaco
-        'pattern' => 'MC(\d{2})(\d{5})(\d{5})([A-Z0-9]{11})(\d{2})',
+        'pattern' => '/MC(\d{2})(\d{5})(\d{5})([A-Z0-9]{11})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -442,7 +442,7 @@ return [
         ]
     ],
     'MD' => [ // Moldova
-        'pattern' => 'MD(\d{2})([A-Z0-9]{2})([A-Z0-9]{18})',
+        'pattern' => '/MD(\d{2})([A-Z0-9]{2})([A-Z0-9]{18})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -450,7 +450,7 @@ return [
         ]
     ],
     'ME' => [ // Montenegro
-        'pattern' => 'ME(\d{2})(\d{3})(\d{13})(\d{2})',
+        'pattern' => '/ME(\d{2})(\d{3})(\d{13})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -459,7 +459,7 @@ return [
         ]
     ],
     'MK' => [ // North Macedonia
-        'pattern' => 'MK(\d{2})(\d{3})([A-Z0-9]{10})(\d{2})',
+        'pattern' => '/MK(\d{2})(\d{3})([A-Z0-9]{10})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -468,7 +468,7 @@ return [
         ]
     ],
     'MT' => [ // Malta
-        'pattern' => 'MT(\d{2})([A-Z]{4})(\d{5})([A-Z0-9]{18})',
+        'pattern' => '/MT(\d{2})([A-Z]{4})(\d{5})([A-Z0-9]{18})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -477,7 +477,7 @@ return [
         ]
     ],
     'MR' => [ // Mauritania
-        'pattern' => 'MR(\d{2})(\d{5})(\d{5})(\d{11})(\d{2})',
+        'pattern' => '/MR(\d{2})(\d{5})(\d{5})(\d{11})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -487,7 +487,7 @@ return [
         ]
     ],
     'MU' => [ // Mauritius
-        'pattern' => 'MU(\d{2})([A-Z]{4}\d{2})(\d{2})(\d{15})([A-Z]{3})',
+        'pattern' => '/MU(\d{2})([A-Z]{4}\d{2})(\d{2})(\d{15})([A-Z]{3})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -497,7 +497,7 @@ return [
         ]
     ],
     'NL' => [ // Netherlands
-        'pattern' => 'NL(\d{2})([A-Z]{4})(\d{10})',
+        'pattern' => '/NL(\d{2})([A-Z]{4})(\d{10})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -505,7 +505,7 @@ return [
         ]
     ],
     'NO' => [ // Norway
-        'pattern' => 'NO(\d{2})(\d{4})(\d{6})(\d{1})',
+        'pattern' => '/NO(\d{2})(\d{4})(\d{6})(\d{1})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -514,7 +514,7 @@ return [
         ]
     ],
     'PK' => [ // Pakistan
-        'pattern' => 'PK(\d{2})([A-Z0-9]{4})(\d{16})',
+        'pattern' => '/PK(\d{2})([A-Z0-9]{4})(\d{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -522,7 +522,7 @@ return [
         ]
     ],
     'PL' => [ // Poland
-        'pattern' => 'PL(\d{2})(\d{3})(\d{4})(\d{1})(\d{16})',
+        'pattern' => '/PL(\d{2})(\d{3})(\d{4})(\d{1})(\d{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -532,7 +532,7 @@ return [
         ]
     ],
     'PS' => [ // Palestinian territories
-        'pattern' => 'PS(\d{2})([A-Z0-9]{4})(\d{21})',
+        'pattern' => '/PS(\d{2})([A-Z0-9]{4})(\d{21})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -540,7 +540,7 @@ return [
         ]
     ],
     'PT' => [ // Portugal
-        'pattern' => 'PT(\d{2})(\d{4})(\d{4})(\d{11})(\d{2})',
+        'pattern' => '/PT(\d{2})(\d{4})(\d{4})(\d{11})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -550,7 +550,7 @@ return [
         ]
     ],
     'QA' => [ // Qatar
-        'pattern' => 'QA(\d{2})([A-Z]{4})([A-Z0-9]{21})',
+        'pattern' => '/QA(\d{2})([A-Z]{4})([A-Z0-9]{21})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -558,7 +558,7 @@ return [
         ]
     ],
     'RO' => [ // Romania
-        'pattern' => 'RO(\d{2})([A-Z]{4})([A-Z0-9]{16})',
+        'pattern' => '/RO(\d{2})([A-Z]{4})([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -566,7 +566,7 @@ return [
         ]
     ],
     'RS' => [ // Serbia
-        'pattern' => 'RS(\d{2})(\d{3})(\d{13})(\d{2})',
+        'pattern' => '/RS(\d{2})(\d{3})(\d{13})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -575,7 +575,7 @@ return [
         ]
     ],
     'SA' => [ // Saudi Arabia
-        'pattern' => 'SA(\d{2})(\d{2})([A-Z0-9]{18})',
+        'pattern' => '/SA(\d{2})(\d{2})([A-Z0-9]{18})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -583,7 +583,7 @@ return [
         ]
     ],
     'SC' => [ // Seychelles
-        'pattern' => 'SC(\d{2})([A-Z]{4}\d{2})(\d{2})(\d{16})([A-Z]{3})',
+        'pattern' => '/SC(\d{2})([A-Z]{4}\d{2})(\d{2})(\d{16})([A-Z]{3})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -593,7 +593,7 @@ return [
         ]
     ],
     'SD' => [ // Sudan
-        'pattern' => 'SD(\d{2})(\d{2})(\d{12})',
+        'pattern' => '/SD(\d{2})(\d{2})(\d{12})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -601,7 +601,7 @@ return [
         ]
     ],
     'SE' => [ // Sweden
-        'pattern' => 'SE(\d{2})(\d{3})(\d{16})(\d)',
+        'pattern' => '/SE(\d{2})(\d{3})(\d{16})(\d)/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -610,7 +610,7 @@ return [
         ]
     ],
     'SI' => [ // Slovenia
-        'pattern' => 'SI(\d{2})(\d{2})(\d{3})(\d{8})(\d{2})',
+        'pattern' => '/SI(\d{2})(\d{2})(\d{3})(\d{8})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -620,7 +620,7 @@ return [
         ]
     ],
     'SK' => [ // Slovakia
-        'pattern' => 'SK(\d{2})(\d{4})(\d{16})',
+        'pattern' => '/SK(\d{2})(\d{4})(\d{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -628,7 +628,7 @@ return [
         ]
     ],
     'SM' => [ // San Marino
-        'pattern' => 'SM(\d{2})([A-Z]{1})(\d{5})(\d{5})([A-Z0-9]{12})',
+        'pattern' => '/SM(\d{2})([A-Z]{1})(\d{5})(\d{5})([A-Z0-9]{12})/',
         'fields' => [
             'IBAN check digits',
             'Check character',
@@ -638,7 +638,7 @@ return [
         ]
     ],
     'ST' => [ // Sao Tome and Principe
-        'pattern' => 'ST(\d{2})(\d{4})(\d{4})(\d{11})(\d{2})',
+        'pattern' => '/ST(\d{2})(\d{4})(\d{4})(\d{11})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -648,7 +648,7 @@ return [
         ]
     ],
     'SV' => [ // El Salvador
-        'pattern' => 'SV(\d{2})([A-Z]{4})(\d{20})',
+        'pattern' => '/SV(\d{2})([A-Z]{4})(\d{20})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -656,7 +656,7 @@ return [
         ]
     ],
     'TL' => [ // East Timor
-        'pattern' => 'TL(\d{2})(\d{3})(\d{14})(\d{2})',
+        'pattern' => '/TL(\d{2})(\d{3})(\d{14})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -665,7 +665,7 @@ return [
         ]
     ],
     'TN' => [ // Tunisia
-        'pattern' => 'TN(\d{2})(\d{2})(\d{3})(\d{13})(\d{2})',
+        'pattern' => '/TN(\d{2})(\d{2})(\d{3})(\d{13})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -675,7 +675,7 @@ return [
         ]
     ],
     'TR' => [ // Turkey
-        'pattern' => 'TR(\d{2})(\d{5})(0)([A-Z0-9]{16})',
+        'pattern' => '/TR(\d{2})(\d{5})(0)([A-Z0-9]{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -684,7 +684,7 @@ return [
         ]
     ],
     'UA' => [ // Ukraine
-        'pattern' => 'UA(\d{2})(\d{6})([A-Z0-9]{19})',
+        'pattern' => '/UA(\d{2})(\d{6})([A-Z0-9]{19})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -692,7 +692,7 @@ return [
         ]
     ],
     'VA' => [ // Vatican City
-        'pattern' => 'VA(\d{2})(\d{3})(\d{15})',
+        'pattern' => '/VA(\d{2})(\d{3})(\d{15})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -700,7 +700,7 @@ return [
         ]
     ],
     'VG' => [ // British Virgin Islands
-        'pattern' => 'VG(\d{2})([A-Z0-9]{4})(\d{16})',
+        'pattern' => '/VG(\d{2})([A-Z0-9]{4})(\d{16})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
@@ -708,7 +708,7 @@ return [
         ]
     ],
     'XK' => [ // Kosovo
-        'pattern' => 'XK(\d{2})(\d{2})(\d{2})(\d{10})(\d{2})',
+        'pattern' => '/XK(\d{2})(\d{2})(\d{2})(\d{10})(\d{2})/',
         'fields' => [
             'IBAN check digits',
             'Bank identifier',
