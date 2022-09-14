@@ -16,6 +16,11 @@ interface IbanFormatInterface
     public function getCountries(): array;
 
     /**
+     * @return bool Whether the country is in the list of supported countries
+     */
+    public function hasCountry(string $country): bool;
+
+    /**
      * @param string $country ISO 3116 alpha-2 country code
      * @return string Regex to match the IBAN format for the country
      */

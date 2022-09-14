@@ -35,6 +35,22 @@ class IbanFormatTest extends TestCase
     /**
      * @dataProvider goodCountries
      */
+    public function test_has_country($country)
+    {
+        $this->assertTrue(self::$testClass->hasCountry($country));
+    }
+
+    /**
+     * @dataProvider badCountries
+     */
+    public function test_does_not_have_country($country)
+    {
+        $this->assertFalse(self::$testClass->hasCountry($country));
+    }
+
+    /**
+     * @dataProvider goodCountries
+     */
     public function test_get_pattern($country)
     {
         $this->assertSame(self::$ibanFormats[$country]['pattern'], self::$testClass->getPattern($country));

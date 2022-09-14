@@ -13,7 +13,7 @@ use RuntimeException;
 
 final class IbanFormat implements IbanFormatInterface
 {
-    public function __construct(private $ibanFormats = null)
+    public function __construct(private array|string|null $ibanFormats = null)
     {
         if ($this->ibanFormats === null) {
             $this->ibanFormats = require 'ibanFormats.php';
@@ -31,9 +31,14 @@ final class IbanFormat implements IbanFormatInterface
         return array_keys($this->ibanFormats);
     }
 
+    public function hasCountry(string $country): bool
+    {
+        return array_key_exists($country, $this->ibanFormats);
+    }
+
     public function getFields(string $country): array
     {
-        if (array_key_exists($country, $this->ibanFormats)) {
+        if ($this->hasCountry($country)) {
             return $this->ibanFormats[$country]['fields'];
         }
 
@@ -45,7 +50,7 @@ final class IbanFormat implements IbanFormatInterface
 
     public function getPattern(string $country): string
     {
-        if (array_key_exists($country, $this->ibanFormats)) {
+        if ($this->hasCountry($country)) {
             return $this->ibanFormats[$country]['pattern'];
         }
 
