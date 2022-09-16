@@ -8,13 +8,13 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use BeastBytes\Iban\Formats\IbanStorage;
+use BeastBytes\IBAN\PHP\IbanStorage;
 use PHPUnit\Framework\TestCase;
 
-class IbanFormatTest extends TestCase
+class IbanStorageTest extends TestCase
 {
-    private static array $goodCountries;
-    private static array $ibanFormats;
+    private static array $goodCountries = [];
+    private static array $ibans = [];
     private static IbanStorage $testClass;
 
     /**
@@ -22,9 +22,9 @@ class IbanFormatTest extends TestCase
      */
     public static function init(): void
     {
-        $ibanFormats = require dirname(__DIR__) . '/src/ibanFormats.php';
+        self::$ibans = require dirname(__DIR__) . '/src/ibans.php';
         self::$testClass = new IbanStorage();
-        self::$ibanFormats = $ibanFormats;
+
     }
 
     public function test_getting_countries()
@@ -53,7 +53,7 @@ class IbanFormatTest extends TestCase
      */
     public function test_get_pattern($country)
     {
-        $this->assertSame(self::$ibanFormats[$country]['pattern'], self::$testClass->getPattern($country));
+        $this->assertSame(self::$ibans[$country]['pattern'], self::$testClass->getPattern($country));
     }
 
     /**
@@ -61,7 +61,7 @@ class IbanFormatTest extends TestCase
      */
     public function test_get_fields($country)
     {
-        $this->assertSame(self::$ibanFormats[$country]['fields'], self::$testClass->getFields($country));
+        $this->assertSame(self::$ibans[$country]['fields'], self::$testClass->getFields($country));
     }
 
     /**
@@ -70,20 +70,20 @@ class IbanFormatTest extends TestCase
     public function test_bad_countries($country)
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage("Country $country not found in list of IBAN formats");
+        $this->expectExceptionMessage("Country \"$country\" not found in list of IBANs");
         self::$testClass->getPattern($country);
 
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage("Country $country not found in list of IBAN formats");
+        $this->expectExceptionMessage("Country \"$country\" not found in list of IBANs");
         self::$testClass->getFields($country);
     }
 
     public function goodCountries(): array
     {
-        $ibanFormats = require dirname(__DIR__) . '/src/ibanFormats.php';
+        $ibans = require dirname(__DIR__) . '/src/ibans.php';
         $goodCountries = [];
 
-        foreach (array_keys($ibanFormats) as $country) {
+        foreach (array_keys($ibans) as $country) {
             $goodCountries[] = [$country];
         }
 

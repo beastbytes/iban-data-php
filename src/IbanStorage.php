@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace BeastBytes\IBAN\PHP;
 
+use BeastBytes\IBAN\IbanStorageInterface;
 use InvalidArgumentException;
 use RuntimeException;
 
