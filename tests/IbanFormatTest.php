@@ -8,14 +8,14 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use BeastBytes\Iban\Formats\IbanFormat;
+use BeastBytes\Iban\Formats\IbanStorage;
 use PHPUnit\Framework\TestCase;
 
 class IbanFormatTest extends TestCase
 {
     private static array $goodCountries;
     private static array $ibanFormats;
-    private static IbanFormat $testClass;
+    private static IbanStorage $testClass;
 
     /**
      * @beforeClass
@@ -23,7 +23,7 @@ class IbanFormatTest extends TestCase
     public static function init(): void
     {
         $ibanFormats = require dirname(__DIR__) . '/src/ibanFormats.php';
-        self::$testClass = new IbanFormat();
+        self::$testClass = new IbanStorage();
         self::$ibanFormats = $ibanFormats;
     }
 

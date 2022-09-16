@@ -1,7 +1,7 @@
 {
-    "name": "beastbytes/iban-formats",
+    "name": "beastbytes/iban-php",
     "type": "library",
-    "description": "International Bank Account Number (IBAN) format data indexed by ISO 3166 country alpha-2 codes",
+    "description": "PHP storage for International Bank Account Number (IBAN) indexed by ISO 3166 country alpha-2 codes",
     "keywords": [
         "International Bank Account Number",
         "IBAN"
@@ -18,7 +18,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "beastbytes/iban": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
@@ -27,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BeastBytes\\Iban\\Formats\\": "src"
+            "BeastBytes\\IBAN\\PHP\\": "src"
         }
     },
     "autoload-dev": {

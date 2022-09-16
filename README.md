@@ -1,5 +1,5 @@
-# IBAN Formats
-[IBAN (International Bank Account Number)](https://www.iban.com) formats provider.
+# IBAN PHP
+Provides PHP storage for [IBAN (International Bank Account Number)](https://www.iban.com).
 
 ## Installation
 
@@ -14,7 +14,7 @@ php composer.phar require --prefer-dist beastbytes/iban
 or add
 
 ```json
-"beastbytes/iban-formats": "^1.0.0"
+"beastbytes/iban-php": "^1.0.0"
 ```
 
 to the require section of your composer.json.
