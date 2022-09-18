@@ -1,5 +1,5 @@
 # IBAN Data PHP (iban-data-php)
-Implementation of iban-data to retrieve [IBAN (International Bank Account Number)](https://www.iban.com) from PHP storage.
+Implementation of iban-data to retrieve [IBAN (International Bank Account Number)](https://www.iban.com) data from PHP storage.
 
 ## Installation
 
