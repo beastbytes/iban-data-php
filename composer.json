@@ -1,14 +1,14 @@
 {
-    "name": "beastbytes/iban-php",
+    "name": "beastbytes/iban-data-php",
     "type": "library",
-    "description": "PHP storage for International Bank Account Number (IBAN) indexed by ISO 3166 country alpha-2 codes",
+    "description": "Implementation of iban-data to retrieve IBAN (International Bank Account Number)] from PHP storage.",
     "keywords": [
         "International Bank Account Number",
         "IBAN"
     ],
     "support": {
-        "issues": "https://github.com/beastbytes/iban-formats/issues",
-        "source": "https://github.com/beastbytes/iban-formats"
+        "issues": "https://github.com/beastbytes/iban-data-php/issues",
+        "source": "https://github.com/beastbytes/iban-data-php"
     },
     "license": "BSD-3-Clause",
     "authors": [{
@@ -19,7 +19,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
-        "beastbytes/iban": "dev-master"
+        "beastbytes/iban-data": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

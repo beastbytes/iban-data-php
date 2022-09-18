@@ -8,11 +8,11 @@ declare(strict_types=1);
 
 namespace BeastBytes\IBAN\PHP;
 
-use BeastBytes\IBAN\IbanStorageInterface;
+use BeastBytes\IBAN\IbanDataInterface;
 use InvalidArgumentException;
 use RuntimeException;
 
-final class IbanStorage implements IbanStorageInterface
+final class IbanData implements IbanDataInterface
 {
     public function __construct(private array|string|null $ibans = null)
     {
