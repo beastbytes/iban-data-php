@@ -22,7 +22,7 @@ class IbanDataTest extends TestCase
      */
     public static function init(): void
     {
-        self::$ibans = require dirname(__DIR__) . '/src/ibans.php';
+        self::$ibans = require dirname(__DIR__) . '/src/data.php';
         self::$testClass = new IbanData();
 
     }
@@ -80,7 +80,7 @@ class IbanDataTest extends TestCase
 
     public function goodCountries(): array
     {
-        $ibans = require dirname(__DIR__) . '/src/ibans.php';
+        $ibans = require dirname(__DIR__) . '/src/data.php';
         $goodCountries = [];
 
         foreach (array_keys($ibans) as $country) {

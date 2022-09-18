@@ -17,7 +17,7 @@ final class IbanData implements IbanDataInterface
     public function __construct(private array|string|null $ibans = null)
     {
         if ($this->ibans === null) {
-            $this->ibans = require 'ibans.php';
+            $this->ibans = require 'data.php';
         } elseif (is_string($this->ibans)) {
             $this->ibans = require $this->ibans;
         }
