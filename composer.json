@@ -19,9 +19,10 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
-        "beastbytes/iban-data": "dev-master"
+        "beastbytes/iban-data": "^1.0"
     },
     "require-dev": {
+        "consolidation/robo": "^4.0",
         "phpunit/phpunit": "^10.0",
         "roave/security-advisories": "dev-latest",
         "vimeo/psalm": "^5.0"
@@ -33,7 +34,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests"
+            "BeastBytes\\IBAN\\PHP\\Tests\\": "tests"
         }
     },
     "scripts": {

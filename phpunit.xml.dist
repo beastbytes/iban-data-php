@@ -15,8 +15,9 @@
   </php>
 
   <testsuites>
-    <testsuite name="IBAN Validator Tests">
+    <testsuite name="IBAN Data Tests">
       <directory suffix=".php">./tests</directory>
+      <exclude>./tests/data</exclude>
     </testsuite>
   </testsuites>
 
