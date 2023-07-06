@@ -1,5 +1,5 @@
 # IBAN Data PHP (iban-data-php)
-Implementation of iban-data to retrieve [IBAN (International Bank Account Number)](https://www.iban.com) data from PHP storage.
+Implementation of iban-data to retrieve [ISO 13616-1:2007 International Bank Account Number (IBAN)](https://www.iban.com) data from PHP storage.
 
 ## Installation
 
@@ -14,7 +14,7 @@ php composer.phar require --prefer-dist beastbytes/iban-data-php
 or add
 
 ```json
-"beastbytes/iban-data-php": "^1.0.0"
+"beastbytes/iban-data-php": "^1.0"
 ```
 
 to the require section of your composer.json.

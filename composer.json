@@ -1,10 +1,11 @@
 {
-    "name": "beastbytes/iban-data-php",
+"name": "beastbytes/iban-data-php",
     "type": "library",
-    "description": "Implementation of iban-data to retrieve IBAN (International Bank Account Number)] from PHP storage.",
+    "description": "Implementation of iban-data to retrieve ISO 13616-1:2007 International Bank Account Number (IBAN)] data from PHP storage.",
     "keywords": [
+        "IBAN",
         "International Bank Account Number",
-        "IBAN"
+        "ISO 13616-1 2007"
     ],
     "support": {
         "issues": "https://github.com/beastbytes/iban-data-php/issues",
